@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio | BALBOABITS</title><meta name="description" content="Tecnología, audio, computadoras y gaming. Descubre una selección de productos con identidad panameña."><meta property="og:title" content="Inicio | BALBOABITS"><meta property="og:description" content="Tecnología, audio, computadoras y gaming. Descubre una selección de productos con identidad panameña."><meta name="theme-color" content="#07090d">
+<link rel="icon" type="image/png" sizes="96x96" href="images/brand/deer-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><script>
+/* Se repite al entrar al sitio, pero no al navegar entre sus páginas. */
+try {
+  const sameSiteReferrer = document.referrer
+    ? new URL(document.referrer).origin === location.origin
+    : location.protocol === 'file:';
+  if (sessionStorage.getItem('bbIntroPlayed') === '1' && sameSiteReferrer) {
+    document.documentElement.classList.add('bb-intro-seen');
+  } else {
+    sessionStorage.setItem('bbIntroPlayed', '1');
+  }
+} catch (_) {}
+</script>
+</head>
+<body data-page="index">
+<div id="site-preloader" class="site-preloader" role="status" aria-live="polite" aria-label="Cargando BALBOABITS">
+  <div class="preloader-aura" aria-hidden="true"></div>
+  <div class="preloader-content">
+    <div class="preloader-stage preloader-stage-brand" aria-hidden="false">
+      <img src="images/brand/balboabits-full-logo.webp" alt="BALBOABITS" class="preloader-full-logo" width="900" height="300" fetchpriority="high">
+      <span class="preloader-sheen" aria-hidden="true"></span>
+    </div>
+    <div class="preloader-stage preloader-stage-deer" aria-hidden="true">
+      <img src="images/brand/deer-emblem.webp" alt="Emblema del venado BALBOABITS" class="preloader-deer" width="600" height="606">
+    </div>
+    <p class="preloader-kicker">TECNOLOGÍA · PANAMÁ</p>
+    <div class="preloader-progress" aria-hidden="true"><span></span></div>
+    <p class="preloader-status">PREPARANDO EXPERIENCIA</p>
+  </div>
+</div>
+<main id="main"></main><script src="js/app.js" defer></script></body></html>
